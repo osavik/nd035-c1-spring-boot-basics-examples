@@ -11,10 +11,9 @@ public class HomeController {
 
     @RequestMapping("/home")
     public String getHomePage(Model model) {
-        model.addAttribute("welcomeMessage", Instant.now().toString());
+        model.addAttribute("welcomeMessage", "ho-ho-ho: " + Instant.now().toString());
         return "home";
     }
-
 }
 
 
